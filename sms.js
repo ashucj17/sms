@@ -45,10 +45,9 @@ function sendSMS(to, from, message) {
         });
 }
 
-// Example usage
 const myPhoneNumber = process.env.MY_PHONE_NUMBER;
 if (myPhoneNumber && accountSid && authToken && twilioPhoneNumber) {
-    const message = "Hello from Node.js! This message is sent securely using environment variables. 🚀";
+    const message = "Dear Client, We are introducing SC Mobile Key, a new and highly secure login method for online and mobile banking. It replaces SMS OTPs with a virtual security token. You'll be prompted in the SC Mobile app to register, and you must do so within 90 days to continue using the app smoothly. To know more https://nc6.in/SCBANK/ejcEpy - StanChart";
     
     sendSMS(myPhoneNumber, twilioPhoneNumber, message)
         .then(() => console.log('✅ SMS sent successfully!'))
